@@ -11,10 +11,9 @@
 <div class="example-wrapper">
     <h1>Hello {{ name }} {{ lastname }}! ✅</h1>
 
-    This friendly message is coming from:
+    Ccылка на главную страницу:
     <ul>
-        <li>Your controller at <code><a href="{{ '/home/dre/PhpstormProjects/first-proj/src/Controller/WelcomerController.php'|file_link(0) }}">src/Controller/WelcomerController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/dre/PhpstormProjects/first-proj/templates/welcomer/index.html.twig'|file_link(0) }}">templates/welcomer/index.html.twig</a></code></li>
+        <li><a href="{{ path('home') }}">Вернуться</a></li>
     </ul>
 </div>
 {% endblock %}
