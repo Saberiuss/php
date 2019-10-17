@@ -17,4 +17,16 @@ class SiteController extends AbstractController
             'users' => $usersRepository->findAll(),
         ]);
     }
+
+
+    /**
+     * @Route("/{x}/{y}", name="home1")
+     */
+    public function home1(string $x, string $y)
+    {
+        return $this->render('site/home1.html.twig', [
+            'x' => $x,
+            'y' => $y,
+        ]);
+    }
 }
